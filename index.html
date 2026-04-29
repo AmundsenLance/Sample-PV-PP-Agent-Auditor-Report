@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sample PV-PP Agent Audit Report</title>
+  <style>
+    :root {
+      --bg: #f7f7f4;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #5f6b7a;
+      --accent: #1f4e79;
+      --border: #d9dee5;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 22px 72px;
+    }
+
+    header {
+      text-align: center;
+      padding: 54px 28px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.35rem;
+      line-height: 1.15;
+      color: var(--accent);
+    }
+
+    .subtitle {
+      margin-top: 14px;
+      font-size: 1.25rem;
+      color: var(--muted);
+    }
+
+    .tag {
+      margin-top: 28px;
+      font-size: 1rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    section {
+      margin-top: 34px;
+      padding: 30px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--accent);
+      font-size: 1.45rem;
+    }
+
+    .quote {
+      font-size: 1.25rem;
+      border-left: 5px solid var(--accent);
+      padding-left: 18px;
+      color: #2d3748;
+      font-style: italic;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 12px 18px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+    }
+
+    a.button.secondary {
+      background: #475569;
+    }
+
+    ul {
+      padding-left: 22px;
+    }
+
+    footer {
+      margin-top: 38px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: var(--accent);
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <header>
+      <h1>Sample PV-PP Agent Audit Report</h1>
+      <div class="subtitle">Wire Transfer Exception Review Agent</div>
+      <div class="tag">
+        Example Audit, Fictitious Company
+      </div>
+    </header>
+
+    <section>
+      <h2>What this sample demonstrates</h2>
+      <p class="quote">
+        We tested a wire-exception agent that technically cannot release funds, but can mark wires
+        “Ready for Release.” The PV-PP audit caught that under cutoff pressure, this status can
+        become de facto approval.
+      </p>
+      <p>
+        The sample report shows how a PV-PP Agent Audit can identify gaps between formal authority
+        and practical authority, visible efficiency and hidden risk, and apparent task success and
+        real recoverability.
+      </p>
+      <p>
+        The entire audit consisted of only eight questions. No code review, system access, or
+        confidential institution data was required for this demonstration.
+      </p>
+
+      <div class="actions">
+        <a class="button" href="Example_Audit.docx">Download the Sample Audit Report</a>
+        <a class="button secondary" href="https://amundsenlance.github.io/">Visit the PV-PP Agent Auditor</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Scenario</h2>
+      <p>
+        This example assumes a large financial institution that processes high-volume commercial
+        wire transfers for business clients. The institution uses operations staff, fraud review,
+        sanctions/compliance screening, callback controls, and wire-release procedures to manage
+        payment risk.
+      </p>
+      <p>
+        The fictitious agent reviews wire-transfer exceptions, clears routine flags, routes items
+        to fraud or compliance queues, and marks wires as <strong>Ready for Release</strong>. It does
+        not release funds directly.
+      </p>
+    </section>
+
+    <section>
+      <h2>Business case</h2>
+      <p>
+        The scenario tests whether an AI agent that appears operationally limited can still create
+        material financial risk by shaping the workflow state that humans rely on. The central issue
+        is whether “Ready for Release” functions as a practical approval signal under cutoff pressure,
+        even though final release formally remains human-controlled.
+      </p>
+      <ul>
+        <li>Formal authority: the agent cannot release money.</li>
+        <li>Practical authority: the agent can clear exceptions and mark wires ready.</li>
+        <li>Hidden risk: staff may rely on the ready queue under deadline pressure.</li>
+        <li>Audit finding: the agent can become a workflow governor without appearing to be one.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Framework note</h2>
+      <p>
+        The PV-PP Agent Auditor is powered by the Productive Value–Productive Power (PV-PP)
+        framework, a non-scalar decision architecture for assessing viability, risk, and
+        recoverability in complex systems.
+      </p>
+      <p class="note">
+        This sample is fictional and is provided only as a demonstration. It is not a safety
+        certification, legal opinion, financial assurance, or validation of any real institution
+        or system.
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        PV-PP Agent Auditor is free for all to use:
+        <a href="https://amundsenlance.github.io/">amundsenlance.github.io</a>
+      </p>
+      <p>
+        Comments: <a href="mailto:amundsenlance@gmail.com">amundsenlance@gmail.com</a>
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
